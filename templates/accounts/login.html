@@ -9,22 +9,27 @@
 
 
   {% if error %}
-    <p style="background-color: salmon; padding: 10px;">{{ error }}</p>
+    <!-- <p style="background-color: salmon; padding: 10px;">{{ error }}</p> -->
   {% endif %}
 
-  <form action="{% url 'login' %}" method="POST">
+  <form action="{% url 'login' %}" method="POST"class="margin-top" >
     {% csrf_token %}
     <div>
+      <input class="input-field" type="text" id="username" name="username" placeholder="" required maxlength="25" minlength="2" />
       <label for="username">Username</label>
-      <input type="text" name="username" required maxlength="25" minlength="2" />
+      <!-- <div class="after"></div> -->
     </div>
 
     <div>
+      <input class="input-field" type="password" id="password" name="password" placeholder="" required maxlength="25" minlength="4" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" />
       <label for="password">Password</label>
-      <input type="password" name="password" required maxlength="25" minlength="4" />
+      <!-- <div class="after"></div> -->
+      <div class="requirements">
+        Your password must be at least 6 characters as well as contain at least one uppercase, one lowercase, and one number.
+      </div>
     </div>
 
-    <input type="submit" value="Login">
+    <button type="submit" value="Login">Sign Up!</button>
 
   </form>
 
