@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<body class="landing">
+
+
+
+
+    <main>
+      <img src=" {% static 'images/ga_logo.png' %}" alt="ga_logo" class="ga-logo" />
+        <h1>We are WDI-48: <span class="lighter">San Francisco, CA</span></h1>
+        <a href="{% url 'about' %}"><button class="btn-landing">Check us out!</button></a>
+    </main>
+
+
+
+<footer>
+    <h6>&copy; 2018 Tay J. Solis, Andrew Foster, Paul Mourraille</h6>
+</footer>
+<!-- Compiled and minified JavaScript -->
+</body>
+
+{% endblock %}

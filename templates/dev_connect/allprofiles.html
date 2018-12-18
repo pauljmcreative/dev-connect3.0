@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'partials/nav_bar.html' %}
+
+<main>
+  {% for profile in profiles %}
+  <section class="profile">
+    <h1>{{profile.tag_line}}</h1>
+  </section>
+  {% endfor %}
+</main>
+{% endblock %}

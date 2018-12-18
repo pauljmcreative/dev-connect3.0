@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'partials/nav_bar.html' %}
+
+
+<form enctype="multipart/form-data" method="POST" action="{% url 'edit_profile' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" placeholder="Submit" />
+</form>
+{% endblock %}

@@ -1,0 +1,71 @@
+3{% extends 'base.html' %}
+
+{% block content %}
+{% include 'partials/nav_bar.html' %}
+{% load static %}
+
+<header style="background-image: url({% static 'images/stock2.jpg' %})">
+</header>
+
+<main class="class">
+
+  <div class="class-info">
+    <div class="title">
+      <h1>WDI-48</h1>
+      <h2>San Francisco</h2>
+    </div>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/CMmY955jD5A" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+  </div>
+
+  <section>
+    <p>
+      Lorem impsum agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
+    </p>
+    <p>
+      Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated content in real-time will have multiple touchpoints for offshoring.
+    </p>
+    <p>
+      Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line.
+    </p>
+  </section>
+  <section class="instructors">
+    <h2>Meet the Instructors</h2>
+    <div class="instructor-blurbs">
+      <div class="blurb">
+        <div class="instructor-img">
+          <img src="{% static 'images/kenny.jpg' %}" />
+        </div>
+
+        <h3>The Legendary Kenny B</h3>
+        <p>
+          What can I say? I'm a mysterious man with a mysterious knife. Don't fuck with me, I went to high school with Tupac.
+        </p>
+      </div>
+      <div class="blurb">
+        <div class="instructor-img">
+          <img src="{% static 'images/brock.jpg' %}" />
+        </div>
+
+        <h3>Brick Whitebread-Coals</h3>
+        <p>
+          I'm equally invested in U.S. politics and being Canadian.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="site">
+    <h2>About this Site</h2>
+    <img src="{% static 'images/stock1.jpg' %}" />
+    <p>
+      Lorem ipsum return on investment assets lean startup gen-z metrics technology client crowdsource scrum project partner network sales twitter pitch. Success supply chain validation accelerator ramen bandwidth. Vesting period iteration low hanging fruit beta. Scrum project focus iPad social media ownership iteration partner network pitch business-to-business.
+    </p>
+    <p>
+      Return on investment churn rate strategy accelerator lean startup. Non-disclosure agreement facebook startup seed money technology equity. Hackathon conversion A/B testing monetization pivot burn rate virality founders stock. Gamification mass market user experience innovator stock deployment twitter paradigm shift equity lean startup leverage network effects buzz. Product management android non-disclosure agreement handshake lean startup assets focus metrics backing early adopters. Disruptive partnership graphical user interface metrics branding interaction design startup deployment burn rate infrastructure marketing agile development alpha leverage.
+    </p>
+  </section>
+
+</main>
+{% include 'partials/student_directory.html' %}
+
+{% endblock %}

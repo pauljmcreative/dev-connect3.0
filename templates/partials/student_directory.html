@@ -1,0 +1,31 @@
+<aside>
+  <!-- <div class="retract">
+    <i class="fas fa-caret-left"></i>
+  </div>
+  <h2>
+    Students:
+  </h2>
+  <ul>
+    {% for student in students %}
+    <li>
+      <a href="{% url 'student_profile' username=student.username %}">{{student.first_name}} {{student.last_name}}</a>
+    </li>
+    {% endfor %}
+  </ul> -->
+  <ul id="slide-out" class="sidenav">
+    <h2>Students</h2>
+    {% for student in students %}
+
+    <li>
+      <a href="{% url 'student_profile' username=student.username %}">{{student.first_name}} {{student.last_name}}</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="tab">
+    <a href="#" data-target="slide-out" class="sidenav-trigger">
+        <p>students</p>
+        <i class="fas fa-caret-right"></i>
+    </a>
+  </div>
+
+</aside>

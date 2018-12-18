@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% include 'partials/nav_bar.html' %}
+
+<h1>Add a new project</h1>
+<form enctype="multipart/form-data" method="POST" action="{% url 'add_project' %}">
+  {% csrf_token %}
+  {{ form.as_p }}
+  <input type="submit" placeholder="Submit" />
+</form>
+{% endblock %}
