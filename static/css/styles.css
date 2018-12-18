@@ -454,7 +454,10 @@ form button:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: #54BAB4;
+  /* background-color: #54BAB4; */
+  background-image: url('../images/nav_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: .5em;
 }
 
@@ -535,7 +538,9 @@ aside{
   padding-bottom: .5em;
   padding-left: .5em;
   height: auto;
-  background-color: #EB3C27;
+  /* background-color: #EB3C27; */
+  background-image: url('../images/tab_bg.jpg');
+  background-repeat: none;
   opacity: 85%;
   text-align: center;
   border-radius: 0 6px 6px 0;
@@ -704,20 +709,6 @@ box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
    flex-direction: column;
  }
 
-
-
-/*.headshot{
-  width: 300px;
-  height: 300px;
-  overflow: hidden;
-  border-radius: 50%;
-}
-.headshot img{
-  max-width: 100%;
-  overflow: hidden;
-  min-width: 300px;
-  min-height: 100%;
-}*/
 .about-text{
   width: 100%;
   margin-left: 20px;
