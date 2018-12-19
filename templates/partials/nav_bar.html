@@ -1,22 +1,21 @@
-
 <nav class="large-nav">
   <a class="hmBut menu-item" href="{% url 'about' %}">Dev Connection</a>
-  <!-- <h1>Dev Connection</h1> -->
-   <ul class="menu">
-    <!-- <li><a class="hmBut menu-item" href="{% url 'about' %}">Home</a></li> -->
-  {% if user.is_authenticated %}
+  <ul class="menu">
+
+    {% if user.is_authenticated %}
     <img src="{{ user.profile.image }}" alt="">
     <li class="greeting">Hello, {{ user.first_name }}</li>
     <li><a class="menu-item" href="{% url 'student_profile' username=user.username%}">My Profile</a></li>
     <li><a class="menu-item" href="{% url 'add_project'%}">Add a Project</a></li>
     <li><a class="menu-item" href="{% url 'logout' %}">Logout</a></li>
-  {% else %}
+    {% else %}
     <li><a class="menu-item" href="{% url 'login' %}">Login</a></li>
     <li><a class="menu-item" href="{% url 'register' %}">New Student?</a></li>
-  {% endif %}
+    {% endif %}
   </ul>
-  <!-- <button id="burgerBtn" class="hide-burger hamburger-icon">&#9776;</button> -->
+
   <button id="crossBtn" class="cross hide">&#735;</button>
+
   <div id="hamburger" class="hamburger-icon">
     <div class="ham-line"></div>
     <div class="ham-line"></div>
