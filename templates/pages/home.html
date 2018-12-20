@@ -3,22 +3,20 @@
 {% load static %}
 
 <body class="landing">
-
-
-
-
+        <img src=" {% static 'images/branding-sm.svg' %}" alt="dev_logo_landing" class="logo-splash"/>
     <main>
-      <img src=" {% static 'images/ga_logo.png' %}" alt="ga_logo" class="ga-logo" />
-        <h1>We are WDI-48: <span class="lighter">San Francisco, CA</span></h1>
-        <a href="{% url 'about' %}"><button class="btn-landing">Check us out!</button></a>
+        <div className="branding">
+            <header className="branding-header">
+                <img src=" {% static 'images/dev-radar.svg' %}" class="branding-logo" alt="dev_radar" />
+                <br/> 
+                <a href="{% url 'about' %}"><button class="btn-landing">Check it out!</button></a>
+                <br/>
+                <h3 class="mtop">We are WDI-48: San Francisco, CA!>/h3>
+                <img src=" {% static 'images/ga_logo.png' %}" alt="ga_logo" class="image" />
+            </header>
+        </div>
     </main>
 
-
-
-<footer>
-    <h6>&copy; 2018 Tay J. Solis, Andrew Foster, Paul Mourraille</h6>
-</footer>
-<!-- Compiled and minified JavaScript -->
 </body>
 
 {% endblock %}

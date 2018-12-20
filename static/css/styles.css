@@ -1,16 +1,4 @@
-/* ====== COLORS ======*/
-/*
-Red: #EB3C27
-Off White: #FDFCFC
-Dark Blue #29375C
-Dark grey: #5C708;
-Blue: #0072bc;
-Grey: #B8B8B8;
-Teal: #54BAB4;
-Dark Grey: #282623;
-
-*/
-/*====COLOR HANDLING===========*/
+/*====COLOR shortcut classes===========*/
 
 .dark-grey{
   color: #282623;
@@ -22,8 +10,6 @@ Dark Grey: #282623;
 .greyblue {
   background-color: #B8B8B8;
 }
-
-
 
 /* ====== GLOBAL ======*/
 body{
@@ -47,6 +33,40 @@ section img{
 .content{
   margin-top: 7em;
   padding: 0 5em;
+}
+
+/*===== Landing page logo anim ===========*/
+.mtop {
+  margin-top: -100px;
+}
+
+.logo-splash {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+.landing main {
+  margin: 0;
+  padding: 0;
+}
+
+.landing.header {
+  margin: 0;
+  padding: 0;
+}
+
+.branding-logo {
+  animation: branding-spin infinite 20s linear;
+}
+
+@keyframes branding-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 /*====TEXT STYLES===========*/
@@ -345,9 +365,11 @@ form button:active {
 }
 
 .landing img {
-    margin: 17% auto 0 auto;
+    margin: 0 auto;
     padding: 0 auto;
+    max-width: 95%;
 }
+
 
 .landing main {
     margin: 0px auto 0px auto;
@@ -387,7 +409,7 @@ form button:active {
     background-color: rgba(204,204,204, 0.35);
     border-radius: 35px;
     min-height: 42px;
-    margin: 14% 0 10% 0;
+    margin: 2% 0 10% 0;
     padding: 8px 30px 8px 30px;
     border: 3px solid rgba(204,204,204, 0.65);
     transition: all .35s ease-in-out;
