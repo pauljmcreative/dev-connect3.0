@@ -3,10 +3,13 @@
 {% block content %}
 {% include 'partials/nav_bar.html' %}
 
-
-<form enctype="multipart/form-data" method="POST" action="{% url 'edit_profile' %}">
+<div class="welcome">
+  <h4>Welcome to Dev Connection!</h4>
+  <h5>Please complete the rest of your profile...</h5>
+</div>
+<form enctype="multipart/form-data" method="POST" action="{% url 'edit_profile' %}" style="border-right: 1px solid #ccc; border-left: 1px solid #ccc; padding: 0 25px 100px 25px" >
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="submit" placeholder="Submit" />
+  <button type="submit" class="" placeholder="Submit" >Save Profile</button>
 </form>
 {% endblock %}

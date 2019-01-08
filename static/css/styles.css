@@ -103,7 +103,7 @@ h3 {
 
 h4 {
   letter-spacing: -.01em;
-  background-color: #0072bc;
+  background-color: teal;
   width: 100%;
   color: #fff;
   padding: 20px 0 20px 40px;
@@ -311,15 +311,28 @@ form button {
 }
 
 form button:hover {
-  background: blue;
+  background:#0054a6;
   color: #fff;
   filter: drop-shadow(0px 2px 3px grey);
 }
 
 form button:active {
   background: #fff;
-  color: blue;
+  color: #0054a6;
   filter: drop-shadow(0px 2px 3px grey);
+}
+
+/*==== EDIT PROFILE ===========*/
+
+.edit-profile p {
+  margin-top: 10%;
+  padding-top: 10%;
+  border: 1px solid #ccc;
+}
+
+.welcome {
+  margin: 100px 0 0 0;
+  text-align: center;
 }
 
 /*====BUTTON STYLES===========*/
@@ -343,9 +356,6 @@ form button:active {
 .button:hover {
   background-color: #ABADCC;
 }
-
-
-
 
 
 /* ================================================================*/
@@ -414,7 +424,7 @@ form button:active {
     border: 3px solid rgba(204,204,204, 0.65);
     transition: all .35s ease-in-out;
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-weight: 400;
     text-shadow: none;
 }
@@ -461,9 +471,6 @@ form button:active {
     }
 
 }
-/* ================================================================*/
-        /* END LANDING PAGE STYLES*/
-/* ================================================================*/
 
 /* ================================================================*/
         /* NAV BAR STYLES */
@@ -487,7 +494,7 @@ form button:active {
   display: flex;
   flex-direction: row;
   font-size: 16px;
-  color: #f4eb42;
+  /* color: #f4eb42; */
   margin-left: auto;
 }
 
@@ -591,14 +598,27 @@ aside{
 }
 
 /* ================================================================*/
-        /* CLASS PAGE STYLES*/
+        /* ABOUT PAGE STYLES*/
 /* ================================================================*/
+.video {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  min-width: 100%;
+}
+
+.marginator {
+  margin: 4% 15%;
+  font-size: 110%;
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 10px;
+}
 
 .instructors {
   text-align: center;
 }
 
-.class-info{
+.class-info {
   /* display: flex;
   flex-direction: row;
   justify-content: space-between;
