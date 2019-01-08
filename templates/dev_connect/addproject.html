@@ -3,10 +3,13 @@
 {% block content %}
 {% include 'partials/nav_bar.html' %}
 
-<h1>Add a new project</h1>
-<form enctype="multipart/form-data" method="POST" action="{% url 'add_project' %}">
+<div class="welcome">
+  <h4>Add a project!</h4>
+  <h5>Please complete the fields below to add a project...</h5>
+</div>
+<form enctype="multipart/form-data" method="POST" action="{% url 'add_project' %}" style="border-right: 1px solid #ccc; border-left: 1px solid #ccc; padding: 0 25px 100px 25px">
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="submit" placeholder="Submit" />
+  <button type="submit" class="" placeholder="Submit" >Save Project</button>
 </form>
 {% endblock %}
