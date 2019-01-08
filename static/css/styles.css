@@ -345,9 +345,6 @@ form button:active {
 }
 
 
-
-
-
 /* ================================================================*/
         /*LANDING PAGE STYLES*/
 /* ================================================================*/
@@ -414,7 +411,7 @@ form button:active {
     border: 3px solid rgba(204,204,204, 0.65);
     transition: all .35s ease-in-out;
     color: #fff;
-    font-size: 1.25em;
+    font-size: 1.75em;
     font-weight: 400;
     text-shadow: none;
 }
@@ -461,9 +458,6 @@ form button:active {
     }
 
 }
-/* ================================================================*/
-        /* END LANDING PAGE STYLES*/
-/* ================================================================*/
 
 /* ================================================================*/
         /* NAV BAR STYLES */
@@ -591,14 +585,27 @@ aside{
 }
 
 /* ================================================================*/
-        /* CLASS PAGE STYLES*/
+        /* ABOUT PAGE STYLES*/
 /* ================================================================*/
+.video {
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+  min-width: 100%;
+}
+
+.marginator {
+  margin: 4% 15%;
+  font-size: 110%;
+  border-bottom: 1px #ccc solid;
+  padding-bottom: 10px;
+}
 
 .instructors {
   text-align: center;
 }
 
-.class-info{
+.class-info {
   /* display: flex;
   flex-direction: row;
   justify-content: space-between;
