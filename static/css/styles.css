@@ -609,10 +609,14 @@ aside{
 
 .marginator {
   margin: 4% 15%;
-  font-size: 110%;
+  font-size: 145%;
   border-bottom: 1px #ccc solid;
   padding-bottom: 10px;
 }
+
+/* .about-intro {
+  font-size: 40px;
+} */
 
 .instructors {
   text-align: center;
@@ -673,6 +677,14 @@ box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
   text-align: left;
 }
 
+.site img {
+  margin: 30px auto;
+}
+
+.site p {
+  font-size: 20px;
+}
+
 /* ================================================================*/
         /* PROFILE STYLES*/
 /* ================================================================*/
@@ -709,7 +721,14 @@ box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
 .about-text{
   border-bottom: 1px solid #B8B8B8;
   padding-top: 20px;
+}
 
+.about-text p {
+  font-size: 18px;
+}
+
+.skills p {
+  font-size: 18px;
 }
 
 .about-me h2 {
