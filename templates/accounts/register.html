@@ -5,9 +5,11 @@
 
 
 
-<h2>Register</h2>
 
-<form action="{% url 'register' %}" method="POST" class="margin-top">
+
+<form action="{% url 'register' %}" method="POST" class="welcome">
+    <h4>Register</h4>
+    <h5>It's always FREE!</h5>
   {% csrf_token %}
   <form action="#0">
 
@@ -60,7 +62,8 @@
     </div>
 
     <button type="submit" value="Register">Sign Up!</button>
-
+    <p>Dev Connection will never share your data or information.</p>
+    <h6>Learn more about Dev-Connection's privacy practices.</h6>
   </form>
 
   {% endblock %}

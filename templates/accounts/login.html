@@ -5,12 +5,14 @@
 
 
 
-<h2>Login</h2>
 
 
 
 
-<form action="{% url 'login' %}" method="POST" class="margin-top">
+
+<form action="{% url 'login' %}" method="POST" class="welcome">
+    <h4>Login</h4>
+    <h5>It's always FREE!</h5>
   {% csrf_token %}
   <div>
     <input class="input-field" type="text" id="username" name="username" placeholder="Username" required maxlength="25"
@@ -31,7 +33,8 @@
   </div>
 
   <button type="submit" value="Login">Sign Up!</button>
-
+  <p>Dev Connection will never share your data or information.</p>
+  <h6>Learn more about Dev-Connection's privacy practices.</h6>
 </form>
 
 {% endblock %}
