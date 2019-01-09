@@ -3,10 +3,14 @@
 {% block content %}
 {% include 'partials/nav_bar.html' %}
 
-<h1>Add a new project</h1>
-<form enctype="multipart/form-data" method="POST" action="{% url 'edit_project' title=project.title%}">
+
+<form enctype="multipart/form-data" method="POST" action="{% url 'edit_project' title=project.title%}" class="welcome">
+  <h4>Edit Your Project</h4>
+    <h5>It's always FREE!</h5>
   {% csrf_token %}
   {{ form.as_p }}
-  <input type="submit" placeholder="Submit" />
+  <button type="submit" value="Register">Save Changes</button>
+    <p>Dev Connection will never share your data or information.</p>
+    <h6>Learn more about Dev-Connection's privacy practices.</h6>
 </form>
 {% endblock %}

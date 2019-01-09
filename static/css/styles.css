@@ -82,6 +82,10 @@ i{
   font-size: 3em;
 }
 
+p {
+  font-size: 1.25em;
+}
+
 h1, h2, h3, h4, h5, h6 {
   color: #54BAB4;
   font-weight: normal;
@@ -623,7 +627,7 @@ aside{
 /* ================================================================*/
 
 main {
-  background-color: #fff;
+  background-color: #eee;
   margin: 0 5%;
 }
 
@@ -712,7 +716,8 @@ box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  text-align: center;
+  background-color: #fff;
 }
 
 .about-me{
@@ -794,7 +799,7 @@ box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
   width: 100%;
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
+  justify-content: center;
 }
 .links li{
   margin: 1em;
@@ -819,10 +824,21 @@ box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
   max-width: 100%;
 }
 
-.project-detail{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.project-detail {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding: 2em;
+  text-align: center;
+  margin: 0 auto;
+  -webkit-box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
+  -moz-box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
+  box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
+  background-color: #fff;
+}
+
+.project-detail a {
+  margin: 0 auto;
 }
 
 .about .btn {
@@ -861,10 +877,6 @@ header{
 -moz-box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
 box-shadow: 2px 2px 2px 2px rgba(184,184,184,0.67);
 padding: 3em;
-}
-
-.project-detail{
-  border-bottom: none;
 }
 
  @media screen and (max-width: 750px){

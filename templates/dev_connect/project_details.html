@@ -2,35 +2,33 @@
 {% block content %}
 {% include 'partials/nav_bar.html' %}
 
-<header style="background-image: url({{ project.screenshot.url }})">
-</header>
+<!-- <header style="background-image: url({{ project.screenshot.url }})">
+</header> -->
 <main class="content">
-  {% if student.username == user.username and user.is_authenticated %}
-  <a href="{% url 'edit_project' title=project.title%}"><button>Edit This Project</button></a>
-  {% endif %}
-  <section class="project-detail">
-    <div>
+  
+  <section class="project-detail"> 
       <h1>{{project.title}}</h1>
       <p>
         {{project.description}}
       </p>
+      <img src="{{project.screenshot.url}}" alt="project" /><br/>
+      {% if student.username == user.username and user.is_authenticated %}
+    <div class="links center">
+      <a class=" project-btn waves-effect waves-light btn" href="{% url 'edit_project' title=project.title%}"><i class="material-icons left far fa-edit"></i>Edit This Project</a>
     </div>
+      <br/>
+  {% endif %}
 
-    <div class="project-tech">
       <h3>
         Tech Used:
       </h3>
       <p>
         {{project.tech}}
       </p>
-    </div>
+        <h2>Teammates</h2>
+      <p>By {{project.teammates}}</p>
   </section>
-  <h2>
-    Teammates
-  </h2>
-  <p>
-    By {{project.teammates}}
-  </p>
+  
 
 </main>
 {% endblock %}
