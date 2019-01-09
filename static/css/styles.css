@@ -14,6 +14,8 @@
 /* ====== GLOBAL ======*/
 body{
   margin: 0;
+  background-image: url('/static/images/bg_rep.png');
+  background-repeat: repeat;
 }
 
 section{
@@ -106,7 +108,8 @@ h4 {
   background-color: teal;
   width: 100%;
   color: #fff;
-  padding: 20px 0 20px 40px;
+  padding: 20px 0 20px 20px;
+  border-radius: 5px;
 }
 
 h5{
@@ -331,9 +334,27 @@ form button:active {
 }
 
 .welcome {
-  margin: 100px 0 0 0;
+  margin: 100px auto 0 auto;
   text-align: center;
+  border-right: 1px solid #ccc; 
+  border-left: 1px solid #ccc; 
+  padding: 0 25px 100px 25px; 
+  background-color: #fff; 
+  border-radius: 6px; 
+  padding: 10px 25px; 
+  filter: drop-shadow( 1px 2px 2px grey);
 }
+
+.welcome p {
+  text-align: left;
+  font-size: 1.05em;
+}
+
+.welcome label {
+  font-size: 1.05em;
+}
+
+
 
 /*====BUTTON STYLES===========*/
 
@@ -416,23 +437,23 @@ form button:active {
 
 .landing .btn-landing {
     font-family: 'Nunito', sans-serif;
-    background-color: rgba(204,204,204, 0.35);
+    background-color: teal;
     border-radius: 35px;
     min-height: 42px;
-    margin: 2% 0 10% 0;
+    margin: 2% 0 20px 0;
     padding: 8px 30px 8px 30px;
     border: 3px solid rgba(204,204,204, 0.65);
     transition: all .35s ease-in-out;
     color: #fff;
-    font-size: 1.75em;
+    font-size: 2.5em;
     font-weight: 400;
     text-shadow: none;
 }
 
 .landing .btn-landing:hover {
-    background-color: rgba(204,204,204, 0.05);
-    color: rgba(204,204,204, 0.85);
-    border: 3px solid teal;
+    background-color: #0054a6;;
+    color: #fff;
+    border: 3px solid rgba(204,204,204, 0.85);
     /*filter: drop-shadow(0px 1px 3px rgba(204,204,204, 0.25));*/
 }
 
@@ -600,11 +621,10 @@ aside{
 /* ================================================================*/
         /* ABOUT PAGE STYLES*/
 /* ================================================================*/
-.video {
-  margin: 0 auto;
-  text-align: center;
-  padding: 0;
-  min-width: 100%;
+
+main {
+  background-color: #fff;
+  margin: 0 5%;
 }
 
 .marginator {
@@ -614,19 +634,13 @@ aside{
   padding-bottom: 10px;
 }
 
-/* .about-intro {
-  font-size: 40px;
-} */
-
 .instructors {
   text-align: center;
 }
 
 .class-info {
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-end; */
+  width: 85%;
+  margin: 0 auto;
 }
 
 .instructor-blurbs{

@@ -1,0 +1,26 @@
+Merge branch 'master' of https://github.com/atfcreative/dev-connect2.0 into andrew
+eee
+# Please enter a commit message to explain why this merge is necessary,
+# especially if it merges an updated upstream into a topic branch.
+#
+# Lines starting with '#' will be ignored, and an empty message aborts
+# the commit.
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch andrew
+# All conflicts fixed but you are still merging.
+#
+# Changes to be committed:
+#	modified:   static/css/styles.css
+#	new file:   static/images/aboutbanner.png
+#	modified:   templates/dev_connect/profileform.html
+#	modified:   templates/pages/about.html
+#

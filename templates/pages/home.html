@@ -4,18 +4,19 @@
 
 <body class="landing">
         <img src=" {% static 'images/branding-sm.svg' %}" alt="dev_logo_landing" class="logo-splash"/>
-    <main>
+    
         <div className="branding">
             <header className="branding-header">
-                <img src=" {% static 'images/dev-radar.svg' %}" class="branding-logo" alt="dev_radar" style="max-width: 350px;" />
+                <img src=" {% static 'images/dev-radar.svg' %}" class="branding-logo" alt="dev_radar" style="max-width: 350px; margin-top: 50px;" />
                 <br/>
-                <h5>We are WDI-48: San Francisco, CA</h5>
-                <a href="{% url 'about' %}"><button class="btn-landing">Check it out!</button></a>
+                
+                <a href="{% url 'about' %}"><button class="btn-landing">Check us out!</button></a>
                 <br/>
-                <img src=" {% static 'images/ga_logo.png' %}" alt="ga_logo" class="image" />
+                <h5 style="color: #fff;">We are WDI-48: San Francisco, CA</h5>
+                <img src=" {% static 'images/ga_logo.png' %}" alt="ga_logo" class="image-responsive" />
             </header>
         </div>
-    </main>
+    
 
 </body>
 
