@@ -1,18 +1,19 @@
 {% extends 'base.html' %}
 {% block content %}
+{% include 'partials/nav_bar.html' %}
 {% load static %}
 
 <body class="landing">
-        <img src=" {% static 'images/branding-sm.svg' %}" alt="dev_logo_landing" class="logo-splash"/>
+        <!-- <img src=" {% static 'images/branding.svg' %}" alt="dev_logo_landing" class="logo-splash"/> -->
     
         <div className="branding">
             <header className="branding-header">
-                <img src=" {% static 'images/dev-radar.svg' %}" class="branding-logo" alt="dev_radar" style="max-width: 350px; margin-top: 50px;" />
+                <img src=" {% static 'images/dev-radar.svg' %}" class="branding-logo" alt="dev_radar" style="margin-top: 100px;" />
                 <br/>
                 
                 <a href="{% url 'about' %}"><button class="btn-landing">Check us out!</button></a>
                 <br/>
-                <h5 style="color: #fff;">We are WDI-48: San Francisco, CA</h5>
+                <h3 style="color: #fff;">We are WDI-48: San Francisco, CA</h3>
                 <img src=" {% static 'images/ga_logo.png' %}" alt="ga_logo" class="image-responsive" />
             </header>
         </div>

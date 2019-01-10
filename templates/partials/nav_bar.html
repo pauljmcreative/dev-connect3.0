@@ -1,6 +1,6 @@
 {% load static %}
 <nav class="large-nav">
-  <a class="hmBut menu-item" href="{% url 'about' %}"><img src="{% static 'images/branding.svg' %}" alt="" /></a>
+  <a class="hmBut menu-item" href="{% url 'about' %}"><img src="{% static 'images/branding.svg' %}" alt="" style="padding-bottom: 3px;" /></a>
   <ul class="menu">
 
     {% if user.is_authenticated %}
