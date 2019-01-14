@@ -3,9 +3,9 @@ General Assembly Web Development Immersive Project 2
 
 By [Tay J Solis](https://github.com/tay-solis), [Paul Mourraille](https://github.com/pmourraille), & [Andrew Foster](https://github.com/atfcreative)
 
-DEV CONNECTION is the best way for employers to get in touch with the students of General Assembly San Francisco's 48th cohort of the Web Development Immersive.
+DEV CONNECTION is the best way for employers to get in touch with web development graduates.
 
-(Check Us Out!)[]
+(Check Us Out!)[https://django-devconnect-devteam.herokuapp.com]
 
 ## An Easy to Use App
 **Employers:** We prioritize the whole student so you don't just get a faceless resume or an impersonal profile. Check out our projects, learn about the immersive, and, most importantly, if we're a good snack fit for your company.
