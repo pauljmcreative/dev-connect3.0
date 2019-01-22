@@ -43,6 +43,9 @@ class Project(models.Model):
     teammates = models.TextField()
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, related_name = 'projects')
 
+    def __str__(self):
+        return self.title
+
     # def save(self, *args, **kwargs):
     #     super(StudentProfile, self).save(*args, **kwargs)
 
@@ -52,4 +55,3 @@ class Project(models.Model):
     #         output_size = (300,300)
     #         img.thumbnail(output_size)
     #         img.save(self.image.path)
-
