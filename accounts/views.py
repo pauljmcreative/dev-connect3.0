@@ -6,7 +6,9 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect, Http404
 from dev_connect.models import StudentProfile
 
-strong = re.compile(r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})")
+strong = re.compile(
+    r"^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})")
+
 
 def register(request):
     if request.method == 'POST':
@@ -30,10 +32,12 @@ def register(request):
                         return render(request, 'accounts/register.html', {'error': 'That email has already been registered.'})
                         #########REGISTER USER#######
                     else:
-                        user = User.objects.create_user(username=username, password=password,     email=email, first_name=first_name, last_name=last_name)
+                        user = User.objects.create_user(
+                            username=username, password=password,     email=email, first_name=first_name, last_name=last_name)
                         user.save()
                         profile = StudentProfile.objects.create(user_id=user)
-                        new_user = auth.authenticate(username=username,password=password)
+                        new_user = auth.authenticate(
+                            username=username, password=password)
                         auth.login(request, user)
                         return HttpResponseRedirect("../../students/profile/edit")
             else:
@@ -45,19 +49,20 @@ def register(request):
 
 
 def login(request):
-  if request.method == 'POST':
-    username = request.POST['username']
-    password = request.POST['password']
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
 
-    user = auth.authenticate(username=username, password=password)
-    if user is not None:
-      auth.login(request, user)
-      return redirect('student_profile', username=username)
+        user = auth.authenticate(username=username, password=password)
+        if user is not None:
+            auth.login(request, user)
+            return redirect('student_profile', username=username)
+        else:
+            return render(request, 'accounts/login.html', {'error': 'Invalid credentials.'})
     else:
-      return render(request, 'accounts/login.html', {'error': 'Invalid credentials.'})
-  else:
-    return render(request, 'accounts/login.html')
+        return render(request, 'accounts/login.html')
+
 
 def logout(request):
-  auth.logout(request)
-  return redirect('home')
+    auth.logout(request)
+    return redirect('home')
