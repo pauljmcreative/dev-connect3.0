@@ -46,9 +46,6 @@ class Project(models.Model):
     def __str__(self):
         return self.title
 
-class Test(models.Model):
-    name = models.CharField(max_length=100)
-
     # def save(self, *args, **kwargs):
     #     super(StudentProfile, self).save(*args, **kwargs)
 
