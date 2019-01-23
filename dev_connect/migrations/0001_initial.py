@@ -17,7 +17,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Project',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=50)),
                 ('hosted_link', models.CharField(max_length=50)),
                 ('github_link', models.CharField(max_length=50)),
@@ -25,25 +26,29 @@ class Migration(migrations.Migration):
                 ('description', models.TextField()),
                 ('tech', models.TextField()),
                 ('teammates', models.TextField()),
-                ('user_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='projects', to=settings.AUTH_USER_MODEL)),
+                ('user_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                              related_name='projects', to=settings.AUTH_USER_MODEL)),
             ],
         ),
         migrations.CreateModel(
             name='StudentProfile',
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                ('id', models.AutoField(auto_created=True,
+                                        primary_key=True, serialize=False, verbose_name='ID')),
                 ('tag_line', models.CharField(blank=True, max_length=50)),
                 ('location', models.CharField(blank=True, max_length=50)),
                 ('linkedin_link', models.CharField(blank=True, max_length=50)),
                 ('github_link', models.CharField(blank=True, max_length=50)),
                 ('website_link', models.CharField(blank=True, max_length=50)),
-                ('image', models.ImageField(default='default.jpg', upload_to='profile_pics')),
+                ('image', models.ImageField(
+                    default='default.jpg', upload_to='profile_pics')),
                 ('skills', models.TextField(blank=True)),
                 ('favorite_snack', models.CharField(blank=True, max_length=50)),
                 ('dream_job', models.TextField(blank=True)),
                 ('favorite_tech', models.CharField(blank=True, max_length=50)),
                 ('hidden_talent', models.CharField(blank=True, max_length=50)),
-                ('user_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='profile', to=settings.AUTH_USER_MODEL)),
+                ('user_id', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE,
+                                              related_name='profile', to=settings.AUTH_USER_MODEL)),
             ],
         ),
     ]
