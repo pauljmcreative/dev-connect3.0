@@ -5,7 +5,7 @@ By [Tay J Solis](https://github.com/tay-solis), [Paul Mourraille](https://github
 
 DEV CONNECTION is the best way for employers to get in touch with web development graduates.
 
-(Check Us Out!)[https://django-devconnect-devteam.herokuapp.com]
+(Check Us Out!)[https://devconnect3.herokuapp.com]
 
 ## An Easy to Use App
 **Employers:** We prioritize the whole student so you don't just get a faceless resume or an impersonal profile. Check out our projects, learn about the immersive, and, most importantly, if we're a good snack fit for your company.
